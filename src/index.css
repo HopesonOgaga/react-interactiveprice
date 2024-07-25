@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 60%; /* Full-width */
+    height: 8px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+    border-radius:30px;
+    background-color: hsl(223, 50%, 87%);
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on hover */
+  }
+
+  /* The slider handle (button that you move) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background: #4caf50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50px;
+
+  }
+}

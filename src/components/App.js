@@ -1,10 +1,12 @@
 import React from "react";
-import Index from "./header";
+
+import Card from "./card";
+import Header from "./header/header";
 function App() {
   return (
-     <section className=""> 
-            <Index/>
-     </section>
+    <section className="bg-VeryPaleBlue ">
+      <Card />
+    </section>
   );
 }
 

@@ -1,9 +1,13 @@
 import React from "react";
-
-export default function Button({ text, bgcolor, onClick, textcolor }) {
+// button function
+export default function Button({ textColor, bgColor, onClick, text }) {
   return (
     <button
-      style={{ text: text, bgcolor: bgcolor, textcolor: textcolor }}
-    ></button>
+      className="w-36  h-12   rounded-xl shadow-sm font-bold capitalize hover:bg-purple-800  "
+      style={{ backgroundColor: bgColor, color: textColor }}
+      onClick={onClick}
+    >
+      {text}
+    </button>
   );
 }
